@@ -11,6 +11,7 @@ public abstract class User {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;
 	private String name;
+	private Integer Age;
 	public Integer getId() {
 		return id;
 	}
@@ -25,8 +26,17 @@ public abstract class User {
 		return name;
 	}
 
+	public Integer getAge() {
+		return Age;
+	}
+
+	public void setAge(Integer age) {
+		Age = age;
+	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
+	
 
 }
